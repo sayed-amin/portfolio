@@ -1,0 +1,103 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    padding: 3rem 2rem 0 2rem;
+    /* background-color: var(--background-universal); */
+}
+
+@media (max-width: 767.5px) {
+    .form {
+        padding: 2rem 0.5rem 0 0.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .form {
+        padding: 2rem 0rem 0 0rem;
+    }
+}
+
+.clippedButton {
+    margin-left: 36px !important;
+    margin-top: 2rem !important;
+    margin-bottom: 0px !important;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.errormsg {
+    color: #c61818;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    padding-bottom: 0.3rem;
+    letter-spacing: 0.02em;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.08);
+}
+
+.validError {
+    color: #c61818;
+    font-size: 0.8rem;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+.loading {
+    animation: spinner 0.6s ease-in-out infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.waitingMsg {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.9;
+    margin-left: 48px;
+    margin-top: 5px;
+}
+
+.waitingMsg span {
+    color: hsl(166, 100%, 90%);
+    border-bottom: 1px solid hsl(166, 100%, 90%);
+}
+
+.svgInline {
+    box-sizing: content-box;
+    display: inline-block;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+    margin-right: 10px;
+}
+
+.svgMui {
+    color: rgb(255 255 255 / 0.7);
+    margin: 8px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}

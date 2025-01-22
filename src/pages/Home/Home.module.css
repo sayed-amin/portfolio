@@ -1,0 +1,29 @@
+.mainComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+    padding: 0rem 150px;
+}
+
+@media (max-width: 1080px) {
+    .mainComponent {
+        padding: 0rem 100px;
+    }
+}
+
+@media (max-width: 767.5px) {
+    .mainComponent {
+        padding: 0rem 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainComponent {
+        padding: 0rem 10px;
+    }
+}
