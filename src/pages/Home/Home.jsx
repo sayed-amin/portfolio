@@ -28,7 +28,7 @@ const Home = () => {
                 <About />
                 <Experience />
                 <Projects />
-                <Contact/>
+                //Contact
                 <Footer />
             </main>
         </Fragment>
