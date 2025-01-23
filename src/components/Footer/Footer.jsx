@@ -12,10 +12,3 @@ const Footer = () => (
 
 export default Footer;
 
-/*
-<div>
-    Give this website a <a style={{ textDecoration: 'none' }} href="https://github.com/Am4nn/Online-Judge-Project" target="_blank" rel="noopener noreferrer">
-        ⭐ <span style={{ color: 'white' }}>on</span> GitHub
-    </a>
-</div>
-*/

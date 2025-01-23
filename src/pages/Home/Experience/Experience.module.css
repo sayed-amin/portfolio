@@ -13,6 +13,18 @@
     height: 100%;
 }
 
+/* Added styles for fixing transparent logos */
+.companyIconCircle {
+    background-color: white; /* Ensures background is white */
+    border-radius: 50%;
+    width: 60px; /* Adjust as needed */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures the logo stays within the circle */
+}
+
 .companyIcon {
     object-fit: contain;
     width: 100%;
