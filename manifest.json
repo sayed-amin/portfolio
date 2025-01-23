@@ -65,7 +65,7 @@
     "background_color": "#141414",
     "screenshots": [
         {
-            "src": "/preview.png",
+            "src": "/portfolio.png",
             "type": "image/png",
             "sizes": "768x368",
             "form_factor": "wide"
