@@ -11,7 +11,7 @@ const Logo = () => {
             }}
         >
             <img 
-                src="/bluelogo.png"  // No need for `/public/`
+                src="/bluelogo.png"  
                 alt="Custom Logo"
                 style={{
                     height: 'auto',   // Allows dynamic resizing

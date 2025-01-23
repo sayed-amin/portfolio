@@ -5,6 +5,21 @@ export default defineConfig(() => {
     return {
         build: {
             outDir: 'build',
+            chunkSizeWarningLimit: 1000, // Increase the chunk size warning limit (default is 500kB)
+            rollupOptions: {
+                output: {
+                    manualChunks(id) {
+                        if (id.includes('node_modules')) {
+                            if (id.includes('react')) return 'react-vendor';
+                            if (id.includes('three')) return 'three-vendor';
+                            return 'vendor'; // General vendor chunk
+                        }
+                    },
+                },
+            },
+        },
+        optimizeDeps: {
+            exclude: ['three'], // Exclude heavy dependencies from optimization if needed
         },
         plugins: [react()],
     };
