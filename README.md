@@ -7,9 +7,9 @@ This project showcases my work, skills, and achievements. Visitors can explore m
 
 ## 🌍 Live Demo
 Check out the live version of my portfolio:
-👉 **[Live Demo](https://sayedamin.in)**
+👉 **[Live Demo](https://onlinejudge.sayedamin.in/)**
 
-![Portfolio Preview](public/portfolio.png)
+![Portfolio Preview](public/onlinejudge.png)
 
 ## 📌 Features
 - **ReactJS**: Interactive and responsive frontend.
