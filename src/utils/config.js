@@ -76,7 +76,7 @@ export const experiences = [
         company_name: "Financial Software & Systems ",
         bottomColor: "#bc1010",
         icon: "/company/FSS.png",
-        date: "Apr 2024 - present",
+        date: "April 2024 - present",
         points: [
             "Designed, developed, and integrated secure NPCI APIs into the DCMS project, deploying a RESTful API for external providers with encryption and authentication mechanisms, ensuring seamless payment processing, data integrity, and regulatory compliance.",
             "Developed a common CAF framework for all card-related operations, enabling smooth integration of multiple banks into the DCMS application and reducing onboarding time. ",
@@ -91,7 +91,7 @@ export const experiences = [
         company_name: "AlgoUniversity (backed by Y-Combinator) ",
         bottomColor: "#FFFFFF",
         icon: "/company/algo.png",
-        date: "Aug 2023 - Apr 2024",
+        date: "August 2023 - April 2024",
         points: [
             "Designed and developed a secure online code execution platform that remotely compiles and judges user-submitted code for programming problems, ensuring correctness and efficiency.",
             "Enhanced user engagement by implementing code submission history and leaderboard tracking, allowing users to monitor progress and improve performance.",
@@ -106,7 +106,7 @@ export const experiences = [
         company_name: "Philips",
         bottomColor: "#0071C5",
         icon: "/company/philips.png",
-        date: "Oct 2021 - present",
+        date: "Sept 2022 - July 2023",
         points: [
             "Developed a Python-based XML to JSON data conversion script, optimizing legacy device data processing for MRI, CT scan, and other medical devices, improving data accessibility and integration.",
             "Implemented role-based authentication (RBAC) in HashiCorp Vault using Java Spring Boot, ensuring secure and controlled access to sensitive medical data.",
@@ -128,7 +128,7 @@ export const projectsData = [
         title: 'Portfolio',
         desciption: 'Crafted an engaging portfolio site with ReactJS and Three.js, enhancing user interaction through a serverless feedback system powered by a custom API',
         tech: ['Nodejs', 'React', 'Threejs', 'Nodemailer', 'MUI', 'Bootstrap', 'drei'],
-        github: 'https://github.com/sayed-amin/OnlineJudgeBackend',
+        github: 'https://github.com/sayed-amin/portfolio',
         external: 'https://www.sayedamin.in',
         image: '/projects/portfolio.png'
     },
