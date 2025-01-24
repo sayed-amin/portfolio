@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
     return {
-        base: './', // Ensures correct asset loading for Vercel & GitHub Pages
         build: {
             outDir: 'dist', // Output directory for Vercel
             chunkSizeWarningLimit: 1500, // Increase warning limit for large Three.js bundles
