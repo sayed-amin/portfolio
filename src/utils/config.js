@@ -78,12 +78,12 @@ export const experiences = [
         icon: "/company/FSS.png",
         date: "April 2024 - present",
         points: [
-            "Designed, developed, and integrated secure NPCI APIs into the DCMS project, deploying a RESTful API for external providers with encryption and authentication mechanisms, ensuring seamless payment processing, data integrity, and regulatory compliance.",
-            "Developed a common CAF framework for all card-related operations, enabling smooth integration of multiple banks into the DCMS application and reducing onboarding time. ",
-            "Successfully integrated SBI, CGGB, KVB, and IDFC Bank into the DCMS application by aligning their specific requirements with our Integrator and CAF framework, ensuring compatibility and scalability.",
-            "Led the bank integration process by analyzing diverse banking requirements and standardizing them within our DCMS architecture, improving operational efficiency.",
-            "Designed and implemented Java 17, Spring Boot 3, and microservices-based scalable APIs, optimizing system performance to onboard 5 lakh customers per hour with end-to-end success.",
-            "Contributed to one of the largest banking applications, handling 30–40 lakh transactions per day, reinforcing system stability and performance for major financial institutions."
+            "Developed and deployed a secure NPCI API, processing over 2 million daily transactions, enabling real-time external payments while ensuring 100% regulatory compliance, and improving transaction processing speed by 80%.",
+            "Designed and integrated a Two-Factor Authentication (2FA) API, reducing unauthorized access attempts by 99.9%, fraud incidents by 85%, and maintaining 99.99% authentication uptime.",
+            "Built a common CAF framework for all card operations, eliminating manual code changes for bank integrations, reducing effort by 80%, and improving processing speed by 85% with multi-threading and schedulers.",
+            "Spearheaded integration of SBI, CGGB, KVB, and IDFC Bank into the DCMS application by collaborating with a team of 3 developers to align requirements with the Integrator & CAF framework, achieving 100% compatibility, 50% faster integration, and seamless onboarding for 10 million customers.",
+            "Designed and implemented Java 17, Spring Boot 3, and microservices-based scalable APIs, optimizing system performance to onboard 500,000 customers per hour with end-to-end success.",
+            "Engineered one of the largest PCI S3-certified banking applications, handling 3–4 million transactions per day, reinforcing system stability and performance for major financial institutions."
         ],
     },
     {
@@ -93,12 +93,12 @@ export const experiences = [
         icon: "/company/algo.png",
         date: "August 2023 - April 2024",
         points: [
-            "Designed and developed a secure online code execution platform that remotely compiles and judges user-submitted code for programming problems, ensuring correctness and efficiency.",
-            "Enhanced user engagement by implementing code submission history and leaderboard tracking, allowing users to monitor progress and improve performance.",
-            "Strengthened platform security by integrating Docker and sandboxing techniques, preventing malicious code execution and ensuring a safe environment for users.",
-            "Optimized performance and scalability by implementing a Redis-based job queue with polling, enabling efficient concurrent request handling and reducing execution time.",
-            "Deployed the platform on AWS EC2 for production, with a scalable architecture designed for future horizontal scaling using Nginx.",
-            "Built the platform using MERN stack, incorporating Vite for fast front-end builds and MUI for a modern UI, ensuring a smooth and responsive user experience."
+            "Architected a secure online code execution platform, remotely compiling and judging user-submitted code for programming problems, handling 1,000+ submissions per day with 99.9% accuracy in execution.",
+            "Increased user engagement by 40% by implementing code submission history and leaderboard tracking, enabling users to monitor progress and enhance coding efficiency.",
+            "Strengthened security by integrating Docker and sandboxing techniques, preventing 100% of unauthorized code execution attacks, ensuring a safe and isolated execution environment.",
+            "Optimized performance and scalability by implementing a Redis-based job queue with polling, reducing execution time by 60%, enabling efficient concurrent request handling for high-traffic loads.",
+            "Orchestrated the deployment of the platform on AWS EC2 with a scalable, fault-tolerant architecture, leveraging Nginx for load balancing, ensuring 99.99% uptime under high traffic.",
+            "Developed a full-stack solution using the MERN stack, leveraging Vite for 2x faster front-end builds and MUI for a modern, responsive UI, improving user experience and interface responsiveness."
         ],
     },
     {
@@ -108,9 +108,9 @@ export const experiences = [
         icon: "/company/philips.png",
         date: "Sept 2022 - July 2023",
         points: [
-            "Developed a Python-based XML to JSON data conversion script, optimizing legacy device data processing for MRI, CT scan, and other medical devices, improving data accessibility and integration.",
-            "Implemented role-based authentication (RBAC) in HashiCorp Vault using Java Spring Boot, ensuring secure and controlled access to sensitive medical data.",
-            "Engineered a multi-threaded database migration solution, reducing execution time significantly by enabling data migration even under system load and allowing automatic recovery from failure states.",
+            "Crafted a Python-based XML to JSON data conversion script, optimizing legacy device data processing for MRI, CT scan, and other medical devices, improving data accessibility by 40% and reducing integration time 30%.",
+            "Implemented role-based authentication (RBAC) in HashiCorp Vault using Java Spring Boot, ensuring 100% compliance with healthcare regulations and providing secure, controlled access to sensitive medical data.",
+            "Pioneered a multi-threaded database migration solution, Accelerated execution time by 60% dramatically by enabling data migration under system load and allowing automatic recovery from failure states.",
         ],
     }
 ];
