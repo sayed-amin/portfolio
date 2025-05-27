@@ -42,7 +42,7 @@ export const socialMediaDetails = [
 export const skills = [
     {
         name: "Audit & GRC",
-        items: ["PCI DSS", "SOX/ITGC", "RBI Compliance", "ISO 27001", "CAF Framework", "GRC", "Risk Assessment", "SOC 1/2"]
+        items: ["PCI DSS", "SOX-ITGC", "RBI Compliance", "ISO 27001", "CAF Framework", "GRC", "Risk Assessment"]
     },
     {
         name: "Security & Tools",
@@ -50,16 +50,20 @@ export const skills = [
     },
     {
         name: "Backend",
-        items: ["Java 17", "Spring Boot 3", "Microservices", "REST APIs", "Kafka", "Redis"]
+        items: ["Java 17", "SpringBoot", "MicroServices", "RestAPI", "Redis"]
     },
     {
-        name: "Cloud & DevOps",
-        items: ["AWS (EC2, S3, Lambda)", "Docker", "Kubernetes", "CI/CD (Jenkins)"]
+       name: "Cloud & DevOps",
+        items: ["AWS", "Docker","CI/CD-Pipelines", "Jenkins"],
     },
     {
-        name: "Data & Programming",
-        items: ["SQL/PostgreSQL", "MongoDB", "Python", "JavaScript"]
-    }
+          name: "Database",
+        items: ["MySQL", "MongoDB","PostgreSQL"],
+    },
+    {
+        name: "Frontend",
+        items: ["React", "NextJs", "Angular","ReactNative","TailwindCSS","Bootstrap" , "MUI","Redux"],
+    },
 ];
 
 export const experiences = [
@@ -103,19 +107,42 @@ export const experiences = [
 ];
 
 export const projectsData = [
+     {
+        title: 'Online Judge',
+        desciption: 'Build a platform that remotely runs and compiles user submitted code for a programming problem securely and judges if the code is correct/wrong',
+        tech: ['Nodejs', 'React', 'Docker', 'Redis', 'MongoDB', 'Expressjs', 'JWT', 'Vite'],
+        github: 'https://github.com/sayed-amin/OnlineJudgeBackend',
+        external: 'http://onlinejudge.sayedamin.in/',
+        image: '/projects/onlinejudge.png'
+    },
+    {
+        title: 'Portfolio',
+        desciption: 'Crafted an engaging portfolio site with ReactJS and Three.js, enhancing user interaction through a serverless feedback system powered by a custom API',
+        tech: ['Nodejs', 'React', 'Threejs', 'Nodemailer', 'MUI', 'Bootstrap', 'drei'],
+        github: 'https://github.com/sayed-amin/portfolio',
+        external: 'https://www.sayedamin.in',
+        image: '/projects/portfolio.png'
+    },
+    {
+        title: 'Smart Hydroponics System (AI-Driven Precision Aeroponics)',
+        desciption: 'Built an AI-powered aeroponics system integrating deep learning and IoT sensors to monitor and control plant growth, ensuring precise environmental adjustments.',
+        tech: [' Arduino uno', 'IOT', 'AWS Cloud', 'Deep learning', 'Image processing', 'Machine Learning'],
+        external:'https://www.researchgate.net/publication/375442746_AI-Driven_Precision_Aeroponics_Deep_Learning_for_Plant_Identification_and_Health_Monitoring_in_an_IoT-Enabled_System',
+        image: '/projects/hydroponics.png'
+    },
     {
         title: 'Automated Compliance Monitoring Platform',
         desciption: 'Docker & AWS–based suite automating PCI DSS and RBI control checks, cutting audit prep time by 75% across 12 financial institutions.',
         tech: ['Docker', 'AWS', 'Python', 'Postman', 'Splunk'],
         external: '',
-        image: '/projects/compliance_monitor.png'
+        image: '/projects/it1.png'
     },
     {
         title: 'TOTP + Redis Fraud Detection System',
         desciption: 'Built secure 2FA flow using TOTP and Redis, preventing $2M+ in annual fraud with 99.9% unauthorized-access prevention.',
         tech: ['Java', 'Spring Boot', 'Redis', 'TOTP'],
         external: '',
-        image: '/projects/fraud_detection.png'
+        image: '/projects/it2.png'
     }
 ];
 
