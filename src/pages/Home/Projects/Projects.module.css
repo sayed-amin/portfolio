@@ -33,16 +33,16 @@
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 8px;
-    border: 1px solid #233554;
-    box-shadow: 0 4px 20px rgba(2, 12, 27, 0.5);
-    background: #112240;
+    border: 1px solid #1f1f2b;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    background: #16161d;
 }
 
 .projectCard:hover,
 .projectCard:focus-visible {
     transform: translateY(-4px);
-    box-shadow: 0 10px 30px rgba(2, 12, 27, 0.7);
-    border-color: rgba(100, 255, 218, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    border-color: rgba(129, 140, 248, 0.2);
 }
 
 .projectCard:hover .backgroundImage>img {

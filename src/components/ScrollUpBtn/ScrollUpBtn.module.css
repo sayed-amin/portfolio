@@ -14,10 +14,10 @@
     cursor: pointer;
     place-items: center;
     border-radius: 9999px;
-    border: 1px solid #64ffda;
+    border: 1px solid #818cf8;
     padding: 0px;
-    color: #64ffda;
-    background-color: rgba(100, 255, 218, 0.1);
+    color: #818cf8;
+    background-color: rgba(129, 140, 248, 0.1);
     outline: 2px solid transparent;
     outline-offset: 2px;
     opacity: 0;
@@ -26,8 +26,8 @@
 }
 
 .button:hover {
-    background-color: rgba(100, 255, 218, 0.2);
-    color: #64ffda;
+    background-color: rgba(129, 140, 248, 0.2);
+    color: #818cf8;
 }
 
 .button svg {

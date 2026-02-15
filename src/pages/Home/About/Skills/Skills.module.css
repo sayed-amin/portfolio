@@ -17,13 +17,13 @@
 .skill_category_container {
     padding: 1rem 1.2rem;
     border-radius: 8px;
-    background: #112240;
-    border: 1px solid #233554;
+    background: #16161d;
+    border: 1px solid #1f1f2b;
     transition: border-color 0.3s ease;
 }
 
 .skill_category_container:hover {
-    border-color: rgba(100, 255, 218, 0.3);
+    border-color: rgba(129, 140, 248, 0.3);
 }
 
 .skill_bubble_container {
@@ -65,7 +65,7 @@
 }
 
 .skill_category_container h3 {
-    color: #8892b0;
+    color: #9ca3af;
     font-weight: 400;
     font-size: 12px;
 }
@@ -80,7 +80,7 @@
 
 .skill_title h3 {
     font-size: clamp(13px, 2vw, 16px);
-    color: #64ffda;
+    color: #818cf8;
     font-weight: 500;
     letter-spacing: 0.02em;
 }

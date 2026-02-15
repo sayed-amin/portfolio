@@ -15,7 +15,7 @@
 
 .project-overline {
     margin: 8px 0;
-    color: #64ffda;
+    color: #818cf8;
     font-family: var(--font-mono);
     font-size: 12px;
     font-weight: 400;
@@ -25,7 +25,7 @@
 .project-title {
     font-size: clamp(22px, 4vw, 26px);
     margin: 0 0 12px;
-    color: #ccd6f6;
+    color: #eaeaf0;
     font-weight: 600;
 }
 
@@ -36,13 +36,13 @@
 }
 
 .project-title a:hover {
-    color: #64ffda;
+    color: #818cf8;
 }
 
 .project-description {
     position: relative;
     z-index: 2;
-    color: #8892b0;
+    color: #9ca3af;
     font-size: 15px;
     line-height: 1.6;
     padding: 8px 0;
@@ -54,7 +54,7 @@
 }
 
 .project-description a {
-    color: #64ffda;
+    color: #818cf8;
     transition: var(--transition);
 }
 
@@ -71,13 +71,13 @@
 
 .project-tech-list li {
     margin: 0;
-    color: #8892b0;
+    color: #9ca3af;
     font-family: var(--font-mono);
     font-size: 11px;
     white-space: nowrap;
     padding: 2px 8px;
     border-radius: 3px;
-    background: rgba(100, 255, 218, 0.05);
+    background: rgba(129, 140, 248, 0.06);
 }
 
 .project-links {
@@ -86,11 +86,11 @@
     position: relative;
     margin-top: 8px;
     margin-left: -10px;
-    color: #a8b2d1;
+    color: #9ca3af;
 }
 
 .project-links a {
-    color: #a8b2d1;
+    color: #9ca3af;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +102,7 @@
 .project-title:focus,
 .project-links a:hover,
 .project-links a:focus-visible {
-    color: #64ffda;
+    color: #818cf8;
 }
 
 .project-links a.external svg {

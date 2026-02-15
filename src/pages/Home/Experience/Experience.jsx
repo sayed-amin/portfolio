@@ -33,7 +33,7 @@ const Experience = () => {
                 <SectionHeading subText="Where I've Worked" headText="Work Experience" />
             </motion.div>
             <div className={styles.timelineWrapper}>
-                <VerticalTimeline animate={!isMobile} lineColor="rgba(100, 255, 218, 0.15)">
+                <VerticalTimeline animate={!isMobile} lineColor="rgba(129, 140, 248, 0.15)">
                     {experiences.map((experience, index) => (
                         <ExperienceCard key={`experience-${index}`} experience={experience} />
                     ))}
@@ -49,18 +49,18 @@ const ExperienceCard = ({ experience }) => {
     return (
         <VerticalTimelineElement
             contentStyle={{
-                background: "#112240",
-                color: "#ccd6f6",
+                background: "#16161d",
+                color: "#eaeaf0",
                 boxShadow: isHovered
-                    ? `0 3px 0 ${experience.bottomColor || '#233554'}, 0 0 20px rgba(100, 255, 218, 0.15)`
-                    : `0 3px 0 ${experience.bottomColor || '#233554'}`,
+                    ? `0 3px 0 ${experience.bottomColor || '#1f1f2b'}, 0 0 20px rgba(129, 140, 248, 0.15)`
+                    : `0 3px 0 ${experience.bottomColor || '#1f1f2b'}`,
                 borderRadius: "8px",
                 border: isHovered
-                    ? "1px solid rgba(100, 255, 218, 0.25)"
-                    : "1px solid rgba(100, 255, 218, 0.06)",
+                    ? "1px solid rgba(129, 140, 248, 0.25)"
+                    : "1px solid rgba(129, 140, 248, 0.06)",
                 transition: "border 0.3s ease, box-shadow 0.3s ease",
             }}
-            contentArrowStyle={{ borderRight: "7px solid #112240" }}
+            contentArrowStyle={{ borderRight: "7px solid #16161d" }}
             date={experience.date}
             icon={
                 <div className={styles.companyIconWrapper}>

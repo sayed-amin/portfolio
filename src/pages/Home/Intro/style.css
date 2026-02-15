@@ -2,15 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
 
 :root {
-    --primary-color: #0a192f;
+    --primary-color: #0b0b10;
     --secondary-color: #fff;
-    --text-color: #e6f1ff;
-    --accent: #64ffda;
+    --text-color: #eaeaf0;
+    --accent: #818cf8;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 }
 
 .mytextcolorwhite {
-    color: #ccd6f6;
+    color: #eaeaf0;
 }
 
 .myname {
@@ -20,7 +20,7 @@
     text-transform: none;
     font-size: clamp(2rem, 5vw, 4rem);
     letter-spacing: -0.02em;
-    color: #ccd6f6;
+    color: #eaeaf0;
     font-weight: 800;
     line-height: 1.1;
 }
@@ -60,7 +60,7 @@
     font-family: var(--font-mono);
     letter-spacing: 0.05em;
     margin-bottom: 2rem;
-    color: #64ffda;
+    color: #818cf8;
     text-transform: none;
     opacity: 0;
     animation: h3Anim 2s ease-out 400ms forwards;
@@ -84,7 +84,7 @@
 }
 
 .hithere {
-    color: #64ffda;
+    color: #818cf8;
     font-family: var(--font-mono);
     font-size: clamp(0.9rem, 1.5vw, 1.1rem) !important;
     font-weight: 400 !important;
@@ -94,12 +94,12 @@
 .namechar0,
 .namechar1,
 .namechar2 {
-    color: #ccd6f6;
+    color: #eaeaf0;
 }
 
 .intro-summary {
     max-width: 540px;
-    color: #8892b0;
+    color: #9ca3af;
     font-size: clamp(0.9rem, 1.5vw, 1.05rem);
     line-height: 1.7;
     margin-top: 1rem;

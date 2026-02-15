@@ -28,7 +28,7 @@
 }
 
 .companyIconCircle {
-    background-color: #112240;
+    background-color: #16161d;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -36,7 +36,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border: 2px solid rgba(100, 255, 218, 0.15);
+    border: 2px solid rgba(129, 140, 248, 0.15);
 }
 
 .companyIcon {
@@ -48,13 +48,13 @@
 .companyTitle {
     font-weight: 600;
     font-size: 20px;
-    color: #e6f1ff;
+    color: #eaeaf0;
     margin-bottom: 4px;
 }
 
 .companyName {
     font-weight: 400;
-    color: #64ffda;
+    color: #818cf8;
     font-size: 14px;
     font-family: var(--font-mono);
     letter-spacing: 0.02em;
@@ -66,9 +66,9 @@
     gap: 4px;
     padding: 3px 10px;
     border-radius: 12px;
-    background: rgba(100, 255, 218, 0.07);
-    border: 1px solid rgba(100, 255, 218, 0.12);
-    color: #8892b0;
+    background: rgba(129, 140, 248, 0.07);
+    border: 1px solid rgba(129, 140, 248, 0.12);
+    color: #9ca3af;
     font-size: 12px;
     font-family: var(--font-mono);
     letter-spacing: 0.02em;
@@ -80,7 +80,7 @@
 .locationIcon {
     width: 12px;
     height: 12px;
-    color: #64ffda;
+    color: #818cf8;
     flex-shrink: 0;
 }
 
@@ -94,7 +94,7 @@
 .li_exp_points {
     position: relative;
     padding-left: 1.4rem;
-    color: #8892b0;
+    color: #9ca3af;
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 0.5rem;
@@ -105,6 +105,6 @@
     position: absolute;
     left: 0;
     top: 0;
-    color: #64ffda;
+    color: #818cf8;
     font-size: 14px;
 }

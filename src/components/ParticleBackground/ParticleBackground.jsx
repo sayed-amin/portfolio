@@ -136,7 +136,7 @@ const ParticleBackground = () => {
                 // Draw particle
                 ctx.beginPath();
                 ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-                ctx.fillStyle = 'rgba(100, 255, 218, 0.15)';
+                ctx.fillStyle = 'rgba(129, 140, 248, 0.15)';
                 ctx.fill();
             }
 
@@ -152,7 +152,7 @@ const ParticleBackground = () => {
                         ctx.beginPath();
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);
-                        ctx.strokeStyle = `rgba(100, 255, 218, ${opacity})`;
+                        ctx.strokeStyle = `rgba(129, 140, 248, ${opacity})`;
                         ctx.lineWidth = 0.5;
                         ctx.stroke();
                     }
@@ -171,7 +171,7 @@ const ParticleBackground = () => {
                         ctx.beginPath();
                         ctx.moveTo(mouse.x, mouse.y);
                         ctx.lineTo(particles[i].x, particles[i].y);
-                        ctx.strokeStyle = `rgba(100, 255, 218, ${opacity})`;
+                        ctx.strokeStyle = `rgba(129, 140, 248, ${opacity})`;
                         ctx.lineWidth = 0.5;
                         ctx.stroke();
                     }

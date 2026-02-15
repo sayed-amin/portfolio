@@ -13,18 +13,18 @@
     padding: 3rem 24px 2rem 24px;
     font-size: 0.8rem;
     font-family: 'SF Mono', 'Fira Code', monospace;
-    color: #8892b0;
+    color: #9ca3af;
     gap: 8px;
 }
 
 .nameLink {
     text-decoration: none;
-    color: #64ffda;
+    color: #818cf8;
     transition: color 150ms ease-in-out;
 }
 
 .nameLink:hover {
-    color: #ccd6f6;
+    color: #a5b4fc;
 }
 
 @media (max-width: 640px) {

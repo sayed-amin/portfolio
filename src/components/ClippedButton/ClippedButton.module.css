@@ -17,8 +17,8 @@
     position: relative;
 
     margin: 1.4em 0;
-    color: #64ffda;
-    border: 1px solid #64ffda;
+    color: #818cf8;
+    border: 1px solid #818cf8;
     border-radius: 4px;
     background-color: transparent;
 
@@ -39,11 +39,11 @@
 }
 
 .btn:hover {
-    color: #64ffda;
+    color: #818cf8;
 }
 
 .btn:hover::after {
-    background-color: rgba(100, 255, 218, 0.1);
+    background-color: rgba(129, 140, 248, 0.1);
 }
 
 .btn span {
@@ -67,5 +67,5 @@
 .grey:hover::after,
 .green:hover::after,
 .yellow:hover::after {
-    background-color: rgba(100, 255, 218, 0.1);
+    background-color: rgba(129, 140, 248, 0.1);
 }

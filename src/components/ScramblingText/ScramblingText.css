@@ -1,5 +1,5 @@
 .scramblingText_text {
-    color: #ccd6f6;
+    color: #eaeaf0;
     display: inline;
 }
 
@@ -9,7 +9,7 @@
 
 .scramblingText_cursor {
     display: inline-block;
-    color: #64ffda;
+    color: #818cf8;
     font-weight: 100;
     animation: blink 1s step-end infinite;
     margin-left: 2px;
