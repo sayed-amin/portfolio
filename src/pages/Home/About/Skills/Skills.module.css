@@ -2,31 +2,41 @@
 
 .skills_wrapper {
     margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 @media (max-width: 575px) {
     .skills_wrapper {
         margin-left: 0.5rem;
+        gap: 1rem;
     }
 }
 
-.skills_section {
-    padding: 100px 0 100px;
-    position: relative;
-    max-width: 700px;
+.skill_category_container {
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    background: #112240;
+    border: 1px solid #233554;
+    transition: border-color 0.3s ease;
 }
 
-.skills_line {
-    position: absolute;
-    width: 150px;
-    border-bottom: solid #31ddac 1px;
-    top: 50%;
-    left: 80px;
+.skill_category_container:hover {
+    border-color: rgba(100, 255, 218, 0.3);
 }
 
 .skill_bubble_container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.skill_bubble_container:hover {
+    transform: translateY(-2px);
 }
 
 .skill_img_container {
@@ -38,26 +48,26 @@
 .skill_bubble_container>h3,
 .skill_title>h3 {
     font-family: 'Montserrat', sans-serif;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-block-start: 0.6em;
+    margin-block-end: 0.6em;
     text-align: center;
 }
 
 .skills_container {
     display: flex;
     flex-wrap: wrap;
-    gap: clamp(10px, 1vw, 20px);
+    gap: clamp(6px, 1vw, 14px);
 }
 
 .skills_container img {
     height: 2.7vw;
-    min-height: 30px;
+    min-height: 28px;
 }
 
 .skill_category_container h3 {
-    color: #cad6d9;
+    color: #8892b0;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .skill_title {
@@ -65,10 +75,14 @@
     align-items: center;
     flex-direction: row;
     justify-content: left;
+    margin-bottom: 0.3rem;
 }
 
 .skill_title h3 {
-    font-size: clamp(13px, 2vw, 18px);
+    font-size: clamp(13px, 2vw, 16px);
+    color: #64ffda;
+    font-weight: 500;
+    letter-spacing: 0.02em;
 }
 
 .arrow_img_container {
@@ -77,12 +91,8 @@
 }
 
 .skill_title img {
-    height: 15px;
+    height: 14px;
     margin-right: 10px;
-}
-
-.skill_bubble_container {
-    padding: 5px 10px;
 }
 
 @media (max-width: 600px) {
@@ -92,5 +102,9 @@
 
     .arrow_img_container img {
         height: 12px;
+    }
+
+    .skill_category_container {
+        padding: 0.6rem 0.7rem;
     }
 }

@@ -6,35 +6,29 @@
 .footer {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
-    flex-wrap: wrap;
     position: relative;
-    /* padding: 64px 24px 32px 24px; */
-    padding: 0px 24px 32px 24px;
-    font-size: 0.875rem;
-    font-family: gotham-light;
+    padding: 3rem 24px 2rem 24px;
+    font-size: 0.8rem;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    color: #8892b0;
+    gap: 8px;
 }
 
 .nameLink {
     text-decoration: none;
-    border-bottom: 1px solid;
-    padding-bottom: 2px;
-    border-bottom-color: hsl(166, 100%, 90%);
-    color: hsl(166, 100%, 90%);
-    transition: color 150ms ease-in-out,
-        border-bottom-color 150ms ease-in-out;
+    color: #64ffda;
+    transition: color 150ms ease-in-out;
 }
 
 .nameLink:hover {
-    border-bottom-color: hsl(345, 100%, 85%);
-    color: hsl(345, 100%, 85%);
+    color: #ccd6f6;
 }
 
 @media (max-width: 640px) {
     .footer {
-        padding: 64px 0 32px 0;
-        flex-direction: column;
-        gap: 5px;
+        padding: 3rem 0 2rem 0;
     }
 }

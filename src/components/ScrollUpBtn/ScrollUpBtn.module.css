@@ -9,29 +9,28 @@
     bottom: 1.25rem;
     right: 1.25rem;
     display: grid;
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
     cursor: pointer;
     place-items: center;
     border-radius: 9999px;
-    border-style: none;
+    border: 1px solid #64ffda;
     padding: 0px;
-    color: rgb(108 121 131/ 1);
-    background-color: rgb(0 0 0 /0.5);
+    color: #64ffda;
+    background-color: rgba(100, 255, 218, 0.1);
     outline: 2px solid transparent;
     outline-offset: 2px;
     opacity: 0;
     transform: translate(0, 2rem);
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover {
-    color: hsl(186, 100%, 60%);
+    background-color: rgba(100, 255, 218, 0.2);
+    color: #64ffda;
 }
 
 .button svg {
     height: 1.01rem;
-    width: 1.01rem
+    width: 1.01rem;
 }

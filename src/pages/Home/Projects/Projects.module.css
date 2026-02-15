@@ -7,13 +7,13 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 4rem;
+    gap: 2.5rem;
     margin-bottom: 1rem;
 }
 
 @media (max-width: 480px) {
     .projectGrid {
-        gap: 2rem;
+        gap: 1.5rem;
     }
 }
 
@@ -31,18 +31,20 @@
     max-width: 570px;
     position: relative;
     overflow: hidden;
-    transition: var(--transition);
-    border-radius: 5px;
-    border: 1px solid rgb(50, 50, 50, 0.30);
-    box-shadow: 0 0.5em 1.2em -0.125em rgba(50, 50, 50, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    border: 1px solid #233554;
+    box-shadow: 0 4px 20px rgba(2, 12, 27, 0.5);
+    background: #112240;
 }
 
 .projectCard:hover,
 .projectCard:focus-visible {
-    box-shadow: 0 0.5em 1.2em -0.125em rgba(50, 50, 50, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(2, 12, 27, 0.7);
+    border-color: rgba(100, 255, 218, 0.2);
 }
 
 .projectCard:hover .backgroundImage>img {
-    /* transform: translateZ(-5px); try this */
     filter: grayscale(0%) contrast(1) brightness(100%);
 }

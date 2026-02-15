@@ -24,7 +24,12 @@ export default function ScramblingText({ data, delay = 1000 }) {
         return () => timeoutID && clearTimeout(timeoutID);
     }, [data, delay]);
 
-    return <div className="scramblingText_text" ref={elementRef}></div>
+    return (
+        <div className="scramblingText_wrapper">
+            <span className="scramblingText_text" ref={elementRef}></span>
+            <span className="scramblingText_cursor">|</span>
+        </div>
+    )
 }
 
 class TextScramble {

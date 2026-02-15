@@ -85,14 +85,14 @@ const Form = ({ className }) => {
 
 const useStyles = makeStyles(() => ({
     form: {
-        '& .MuiInputBase-input': { color: 'white' },
-        '& .MuiFormLabel-root': { color: 'white' },
+        '& .MuiInputBase-input': { color: '#ccd6f6' },
+        '& .MuiFormLabel-root': { color: '#8892b0' },
         '& .MuiOutlinedInput-root': {
-            '& fieldset': { borderColor: 'rgb(255 255 255 / 0.5)' },
-            '&:hover fieldset': { borderColor: 'white' },
-            '&.Mui-focused fieldset': { borderColor: '#ed6c02' },
+            '& fieldset': { borderColor: '#233554', borderRadius: '6px' },
+            '&:hover fieldset': { borderColor: '#64ffda' },
+            '&.Mui-focused fieldset': { borderColor: '#64ffda' },
         },
-        '& .MuiSvgIcon-root': { color: 'rgb(255 255 255 / 0.7)', mr: 1, my: 0.5 },
+        '& .MuiSvgIcon-root': { color: '#8892b0', mr: 1, my: 0.5 },
     }
 }));
 

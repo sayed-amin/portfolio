@@ -3,39 +3,53 @@
 }
 
 .subText {
-    opacity: 0.8;
-    letter-spacing: 0.05em;
+    opacity: 1;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: rgb(170, 166, 195);
+    color: #64ffda;
+    font-size: 14px;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    margin-bottom: 0.4rem;
 }
 
 .headText {
-    font-weight: 900;
-    color: rgb(255, 255, 255);
+    font-weight: 700;
+    color: #ccd6f6;
+    font-size: 38px;
+    letter-spacing: -0.01em;
 }
 
-.subText {
-    /* font-size: 18px; */
-    font-size: 16px;
-}
-
-.headText {
-    /* font-size: 50px; */
-    font-size: 45px;
+.headText::after {
+    content: "";
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    background-color: #233554;
+    margin-left: 20px;
+    vertical-align: middle;
 }
 
 @media (max-width: 640px) {
     .subText {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .headText {
-        font-size: 38px;
+        font-size: 30px;
+    }
+
+    .headText::after {
+        width: 100px;
+        margin-left: 12px;
     }
 }
 
 @media (max-width: 450px) {
     .headText {
-        font-size: 30px;
+        font-size: 26px;
+    }
+
+    .headText::after {
+        width: 60px;
     }
 }

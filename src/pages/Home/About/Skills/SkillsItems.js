@@ -1,17 +1,32 @@
 export const SkillItems = [
   {
     name: "Languages",
-    items: ["Java", "Python", "HTML/CSS", "Javascript", "Typescript", "C", "SQL"],
+    items: ["Java", "C++", "Python", "Javascript", "Typescript", "HTML/CSS"],
     cName: "skill-container",
   },
   {
-    name: "Frameworks",
-    items: ["React","Node","Sass","Angular", "Flask", "Flutter", "Postman","Django", "SocketIO"],
+    name: "Backend",
+    items: ["SpringBoot", "MicroServices", "RestAPI", "GraphQL", "Node", "ExpressJs"],
     cName: "skill-container",
   },
   {
-    name: "Tools/Other",
-    items: ["Git","Linux","MongoDB","Docker","AWS","Figma", "Photoshop", "Illustrator"],
+    name: "Frontend",
+    items: ["React", "NextJs", "Angular", "ReactNative", "TailwindCSS", "Bootstrap", "MUI", "Redux"],
+    cName: "skill-container",
+  },
+  {
+    name: "Cloud & DevOps",
+    items: ["AWS", "Docker", "CI/CD-Pipelines", "Jenkins"],
+    cName: "skill-container",
+  },
+  {
+    name: "Databases",
+    items: ["PostgreSQL", "Redis", "MongoDB", "MySQL"],
+    cName: "skill-container",
+  },
+  {
+    name: "Tools",
+    items: ["Git", "IntellijIdea", "Postman"],
     cName: "skill-container",
   },
 ];

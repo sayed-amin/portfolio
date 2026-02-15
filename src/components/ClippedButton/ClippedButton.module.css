@@ -1,41 +1,49 @@
 :root {
-    --transition-time: 1s;
+    --transition-time: 0.3s;
 }
 
 .btn {
-    font-size: 1.3rem;
-    height: 3.5rem;
+    font-size: 0.875rem;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    height: 3rem;
     width: fit-content;
-    padding: 0 1.4rem;
+    padding: 0 1.5rem;
     text-decoration: none;
-    text-transform: capitalize;
     cursor: pointer;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     margin: 1.4em 0;
-    transform: scale(0.9);
-    color: black;
+    color: #64ffda;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    background-color: transparent;
 
-    transition: transform var(--transition-time) cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all var(--transition-time) cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .btn::after {
     content: '';
     width: 100%;
-    height: 3.5rem;
+    height: 100%;
     position: absolute;
-    border-radius: 5px;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    background-color: transparent;
 
     transition: background-color var(--transition-time) cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .btn:hover {
-    color: rgb(35, 35, 35);
-    transform: scale(0.97);
+    color: #64ffda;
+}
+
+.btn:hover::after {
+    background-color: rgba(100, 255, 218, 0.1);
 }
 
 .btn span {
@@ -45,42 +53,19 @@
     align-items: center;
 }
 
-.skyblue::after {
-    background-color: hsl(180, 100%, 50%);
-}
-
-.skyblue:hover::after {
-    background-color: hsl(180, 100%, 40%);
-}
-
-.blue::after {
-    background-color: hsl(225, 55%, 76%);
-}
-
-.blue:hover::after {
-    background-color: hsl(226, 55%, 69%);
-}
-
-.grey::after {
-    background-color: hsl(0, 0%, 83%);
-}
-
-.grey:hover::after {
-    background-color: hsl(0, 0%, 73%);
-}
-
-.green::after {
-    background-color: hsl(161, 100%, 50%);
-}
-
-.green:hover::after {
-    background-color: hsl(161, 100%, 43%);
-}
-
+/* Color variants all unified to the accent theme */
+.skyblue::after,
+.blue::after,
+.grey::after,
+.green::after,
 .yellow::after {
-    background-color: hsl(60, 80%, 50%);
+    background-color: transparent;
 }
 
+.skyblue:hover::after,
+.blue:hover::after,
+.grey:hover::after,
+.green:hover::after,
 .yellow:hover::after {
-    background-color: hsl(60, 80%, 43%);
+    background-color: rgba(100, 255, 218, 0.1);
 }

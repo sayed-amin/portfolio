@@ -1,8 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-
 .navfontfamily {
-    font-family: "Overpass" !important;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace !important;
 }
 
 .myNavLink {
@@ -13,7 +10,8 @@
     align-items: center;
     transition: color 300ms ease 0.1s,
         all 200ms ease-in-out;
-    opacity: 0.6 !important;
+    opacity: 0.7 !important;
+    font-size: 13px !important;
 }
 
 .myNavLink::after {
@@ -24,7 +22,7 @@
     right: 8px;
     left: 8px;
     height: 2px;
-    background: rgb(0, 229, 255);
+    background: #64ffda;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 400ms cubic-bezier(0.4, 0.0, 0.2, 1);
@@ -37,20 +35,33 @@
 
 .active.myNavLink {
     opacity: 1 !important;
+    color: #64ffda !important;
 }
 
 .myNavLink:hover,
 .myNavLink:active,
 .myNavLink:focus {
     opacity: 1 !important;
+    color: #64ffda !important;
 }
 
 .navbar {
     z-index: 900 !important;
     position: fixed !important;
     padding: 0rem 0rem 0rem 2rem !important;
-    font-size: 1.2rem !important;
-    transition: background-color 400ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    font-size: 1rem !important;
+    transition: background-color 400ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        transform 300ms ease-in-out !important;
+}
+
+.nav-hidden {
+    transform: translateY(-100%) !important;
+}
+
+.scrolled {
+    background-color: rgba(10, 25, 47, 0.85) !important;
+    backdrop-filter: blur(10px) !important;
+    box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7) !important;
 }
 
 .class-nav-df-jc-ai {
@@ -63,20 +74,15 @@
     .navbar {
         padding: 0 !important;
         backdrop-filter: blur(0px) !important;
-        /* background-color: var(--background-universal) !important; */
-        /* padding: 1rem 2rem !important; */
-        font-size: 1.4rem !important;
+        font-size: 1.2rem !important;
     }
 
     .class-nav-df-jc-ai {
-        /* height: calc(100dvh - 50px); */
-        /* height: calc(100dvh - 81px); */
         height: calc(100dvh - 64px);
-        /* background-color: var(--background-universal) !important; */
     }
 
     .navbar-expanded {
-        background-color: var(--background-universal) !important;
+        background-color: #0a192f !important;
     }
 
     .nav-link {
@@ -84,15 +90,10 @@
     }
 }
 
-/* .scrolled {
-    backdrop-filter: blur(2px) !important;
-} */
-
 .navbar-toggler {
     position: relative !important;
     background-color: transparent !important;
     border-color: transparent !important;
-    /* padding: 0 !important; */
 }
 
 .navbar-toggler:focus,
@@ -102,21 +103,20 @@
 
 .navbar-nav .nav-link {
     text-transform: capitalize !important;
-    color: white !important;
+    color: #ccd6f6 !important;
     padding-right: 1rem !important;
     padding-left: 1rem !important;
 }
 
 .navbar-nav .nav-item {
     position: relative;
-    margin-left: 20px;
+    margin-left: 8px;
 }
 
 .navbar-nav .nav-item a {
     position: relative;
     z-index: 1;
 }
-
 
 .navbar_tglbtn:focus {
     color: white;

@@ -20,8 +20,19 @@ const NavBar = () => {
     const isMobile = useMediaQuery('(max-width: 767.5px)');
 
     const [scrolled, setScrolled] = useState(false);
+    const [hidden, setHidden] = useState(false);
     useEffect(() => {
-        const onScroll = () => (window.scrollY > 50) ? setScrolled(true) : setScrolled(false);
+        let prevScrollY = window.scrollY;
+        const onScroll = () => {
+            const currentScrollY = window.scrollY;
+            setScrolled(currentScrollY > 50);
+            if (currentScrollY > 50 && currentScrollY > prevScrollY) {
+                setHidden(true);
+            } else {
+                setHidden(false);
+            }
+            prevScrollY = currentScrollY;
+        };
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
@@ -46,7 +57,7 @@ const NavBar = () => {
             fixed="top"
             expand="md"
             variant='dark'
-            className={`navbar navfontfamily ${scrolled ? 'scrolled' : ''} ${expand ? 'navbar-expanded' : ''}`}
+            className={`navbar navfontfamily ${scrolled ? 'scrolled' : ''} ${expand ? 'navbar-expanded' : ''} ${hidden && !expand ? 'nav-hidden' : ''}`}
         >
             <Container className="nav-container-fix">
                 <TransitionGroup component={null}>
