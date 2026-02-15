@@ -9,7 +9,7 @@
 }
 
 ::selection {
-    background-color: rgba(129, 140, 248, 0.2);
+    background-color: rgba(96, 165, 250, 0.2);
 }
 
 body {
@@ -24,7 +24,7 @@ body {
     min-height: 100vh;
     color: #eaeaf0 !important;
     background-color: var(--background-universal) !important;
-    caret-color: #818cf8;
+    caret-color: #60a5fa;
 }
 
 code {
@@ -72,41 +72,41 @@ code {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #818cf8;
+    background-color: #60a5fa;
 }
 
 :root {
     --background-universal: #0b0b10;
 
-    --use-gradient1: linear-gradient(315deg, #818cf8 0%, #6366f1 74%);
-    --use-gradient2: linear-gradient(101deg, #818cf8, #a78bfa 74%);
-    --use-gradient3: linear-gradient(315deg, #818cf8 0%, #c084fc 74%);
-    --use-gradient4: linear-gradient(315deg, #818cf8 0%, #6366f1 74%);
-    --use-gradient5: linear-gradient(315deg, #818cf8 0%, #a78bfa 74%);
-    --use-gradient6: linear-gradient(315deg, #6366f1 0%, #818cf8 74%);
-    --use-gradient7: linear-gradient(170deg, #6366f1 0%, #c084fc 74%);
-    --use-gradient8: linear-gradient(315deg, #a5b4fc 0%, #818cf8 74%);
-    --use-gradient9: linear-gradient(315deg, #818cf8 0%, #6366f1 74%);
-    --use-gradient10: linear-gradient(315deg, #a78bfa 0%, #818cf8 74%);
-    --use-gradient11: linear-gradient(315deg, #818cf8 0%, #a5b4fc 74%);
-    --use-gradient12: linear-gradient(315deg, #818cf8 0%, #c084fc 74%);
-    --use-gradient13: linear-gradient(315deg, #6366f1 0%, #818cf8 74%);
-    --use-gradient14: linear-gradient(315deg, #a5b4fc 0%, #c4b5fd 74%);
-    --use-gradient15: linear-gradient(315deg, #818cf8 0%, #a78bfa 74%);
-    --use-gradient16: linear-gradient(315deg, #818cf8 0%, #a5b4fc 74%);
-    --use-gradient17: linear-gradient(315deg, #6366f1 0%, #818cf8 74%);
-    --use-gradient18: linear-gradient(315deg, #a78bfa 0%, #818cf8 74%);
-    --use-gradient19: linear-gradient(315deg, #818cf8 0%, #6366f1 74%);
-    --use-gradient20: linear-gradient(319deg, #818cf8 0%, #a78bfa 37%, #c084fc 100%);
-    --use-gradient21: linear-gradient(25deg, #6366f1 10%, #818cf8 74%);
+    --use-gradient1: linear-gradient(315deg, #60a5fa 0%, #3b82f6 74%);
+    --use-gradient2: linear-gradient(101deg, #60a5fa, #38bdf8 74%);
+    --use-gradient3: linear-gradient(315deg, #60a5fa 0%, #38bdf8 74%);
+    --use-gradient4: linear-gradient(315deg, #60a5fa 0%, #3b82f6 74%);
+    --use-gradient5: linear-gradient(315deg, #60a5fa 0%, #38bdf8 74%);
+    --use-gradient6: linear-gradient(315deg, #3b82f6 0%, #60a5fa 74%);
+    --use-gradient7: linear-gradient(170deg, #3b82f6 0%, #38bdf8 74%);
+    --use-gradient8: linear-gradient(315deg, #93c5fd 0%, #60a5fa 74%);
+    --use-gradient9: linear-gradient(315deg, #60a5fa 0%, #3b82f6 74%);
+    --use-gradient10: linear-gradient(315deg, #60a5fa 0%, #38bdf8 74%);
+    --use-gradient11: linear-gradient(315deg, #60a5fa 0%, #93c5fd 74%);
+    --use-gradient12: linear-gradient(315deg, #60a5fa 0%, #38bdf8 74%);
+    --use-gradient13: linear-gradient(315deg, #3b82f6 0%, #60a5fa 74%);
+    --use-gradient14: linear-gradient(315deg, #93c5fd 0%, #7dd3fc 74%);
+    --use-gradient15: linear-gradient(315deg, #60a5fa 0%, #38bdf8 74%);
+    --use-gradient16: linear-gradient(315deg, #60a5fa 0%, #93c5fd 74%);
+    --use-gradient17: linear-gradient(315deg, #3b82f6 0%, #60a5fa 74%);
+    --use-gradient18: linear-gradient(315deg, #60a5fa 0%, #38bdf8 74%);
+    --use-gradient19: linear-gradient(315deg, #60a5fa 0%, #3b82f6 74%);
+    --use-gradient20: linear-gradient(319deg, #60a5fa 0%, #60a5fa 37%, #38bdf8 100%);
+    --use-gradient21: linear-gradient(25deg, #3b82f6 10%, #60a5fa 74%);
 
     --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
 
     /* Design tokens */
     --bg: #0b0b10;
     --surface: #16161d;
-    --accent: #818cf8;
-    --accent-hover: #a5b4fc;
+    --accent: #60a5fa;
+    --accent-hover: #93c5fd;
     --text-primary: #eaeaf0;
     --text-secondary: #9ca3af;
     --border: #1f1f2b;
@@ -118,7 +118,7 @@ code {
 /*========== Global Smooth Interactions ==========*/
 
 *:focus-visible {
-    outline: 2px solid #818cf8;
+    outline: 2px solid #60a5fa;
     outline-offset: 3px;
     border-radius: 3px;
 }

@@ -16,54 +16,48 @@ const containerVariants = {
     },
 };
 
-// "Hi, my name is" -- subtle slide from left
+// "Hi, my name is" -- subtle slide from left with blur
 const slideFromLeftVariants = {
-    hidden: { opacity: 0, x: -40 },
+    hidden: { opacity: 0, x: -40, filter: 'blur(10px)' },
     visible: {
-        opacity: 1,
-        x: 0,
-        transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] },
-    },
-};
-
-// Name -- scale-up entrance
-const scaleUpVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: {
-        opacity: 1,
-        scale: 1,
+        opacity: 1, x: 0, filter: 'blur(0px)',
         transition: { duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] },
     },
 };
 
-// Short description -- simple fade in
-const fadeInVariants = {
-    hidden: { opacity: 0, y: 10 },
+// Name -- scale-up entrance with blur
+const scaleUpVariants = {
+    hidden: { opacity: 0, scale: 0.85, filter: 'blur(12px)' },
     visible: {
-        opacity: 1,
-        y: 0,
+        opacity: 1, scale: 1, filter: 'blur(0px)',
+        transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] },
+    },
+};
+
+// Short description -- fade in with blur
+const fadeInVariants = {
+    hidden: { opacity: 0, y: 10, filter: 'blur(8px)' },
+    visible: {
+        opacity: 1, y: 0, filter: 'blur(0px)',
         transition: { duration: 0.6, ease: 'easeOut' },
     },
 };
 
-// Scrambling text -- slide up
+// Scrambling text -- slide up with blur
 const slideUpVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 30, filter: 'blur(8px)' },
     visible: {
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] },
+        opacity: 1, y: 0, filter: 'blur(0px)',
+        transition: { duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] },
     },
 };
 
-// Intro summary -- fade in last (opacity-only for blur-to-clear feel)
+// Intro summary -- fade in last with blur-to-clear reveal
 const fadeInLastVariants = {
-    hidden: { opacity: 0, y: 15, scale: 0.98 },
+    hidden: { opacity: 0, y: 20, filter: 'blur(8px)' },
     visible: {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        transition: { duration: 0.8, ease: 'easeOut' },
+        opacity: 1, y: 0, filter: 'blur(0px)',
+        transition: { duration: 0.9, ease: 'easeOut' },
     },
 };
 

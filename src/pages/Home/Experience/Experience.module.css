@@ -36,7 +36,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border: 2px solid rgba(129, 140, 248, 0.15);
+    border: 2px solid rgba(96, 165, 250, 0.15);
 }
 
 .companyIcon {
@@ -54,7 +54,7 @@
 
 .companyName {
     font-weight: 400;
-    color: #818cf8;
+    color: #60a5fa;
     font-size: 14px;
     font-family: var(--font-mono);
     letter-spacing: 0.02em;
@@ -66,8 +66,8 @@
     gap: 4px;
     padding: 3px 10px;
     border-radius: 12px;
-    background: rgba(129, 140, 248, 0.07);
-    border: 1px solid rgba(129, 140, 248, 0.12);
+    background: rgba(96, 165, 250, 0.07);
+    border: 1px solid rgba(96, 165, 250, 0.12);
     color: #9ca3af;
     font-size: 12px;
     font-family: var(--font-mono);
@@ -80,7 +80,7 @@
 .locationIcon {
     width: 12px;
     height: 12px;
-    color: #818cf8;
+    color: #60a5fa;
     flex-shrink: 0;
 }
 
@@ -105,6 +105,6 @@
     position: absolute;
     left: 0;
     top: 0;
-    color: #818cf8;
+    color: #60a5fa;
     font-size: 14px;
 }

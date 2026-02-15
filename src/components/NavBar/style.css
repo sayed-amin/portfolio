@@ -22,7 +22,7 @@
     right: 8px;
     left: 8px;
     height: 2px;
-    background: #818cf8;
+    background: #60a5fa;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 400ms cubic-bezier(0.4, 0.0, 0.2, 1);
@@ -35,14 +35,14 @@
 
 .active.myNavLink {
     opacity: 1 !important;
-    color: #818cf8 !important;
+    color: #60a5fa !important;
 }
 
 .myNavLink:hover,
 .myNavLink:active,
 .myNavLink:focus {
     opacity: 1 !important;
-    color: #818cf8 !important;
+    color: #60a5fa !important;
 }
 
 .navbar {

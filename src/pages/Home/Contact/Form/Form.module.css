@@ -7,6 +7,13 @@
     padding: 2rem 1.5rem 0 1.5rem;
     background: #16161d;
     border: 1px solid #1f1f2b;
+    position: relative;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form:focus-within {
+    border-color: rgba(96, 165, 250, 0.2);
+    box-shadow: 0 4px 30px rgba(96, 165, 250, 0.06);
 }
 
 @media (max-width: 767.5px) {

@@ -5,7 +5,7 @@
     --primary-color: #0b0b10;
     --secondary-color: #fff;
     --text-color: #eaeaf0;
-    --accent: #818cf8;
+    --accent: #60a5fa;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 }
 
@@ -20,9 +20,20 @@
     text-transform: none;
     font-size: clamp(2rem, 5vw, 4rem);
     letter-spacing: -0.02em;
-    color: #eaeaf0;
     font-weight: 800;
     line-height: 1.1;
+    background: linear-gradient(135deg, #60a5fa 0%, #38bdf8 50%, #60a5fa 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 4s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% center; }
+    50% { background-position: 100% center; }
+    100% { background-position: 0% center; }
 }
 
 .section {
@@ -60,7 +71,7 @@
     font-family: var(--font-mono);
     letter-spacing: 0.05em;
     margin-bottom: 2rem;
-    color: #818cf8;
+    color: #60a5fa;
     text-transform: none;
     opacity: 0;
     animation: h3Anim 2s ease-out 400ms forwards;
@@ -84,7 +95,7 @@
 }
 
 .hithere {
-    color: #818cf8;
+    color: #60a5fa;
     font-family: var(--font-mono);
     font-size: clamp(0.9rem, 1.5vw, 1.1rem) !important;
     font-weight: 400 !important;
@@ -94,7 +105,7 @@
 .namechar0,
 .namechar1,
 .namechar2 {
-    color: #eaeaf0;
+    -webkit-text-fill-color: transparent;
 }
 
 .intro-summary {

@@ -89,8 +89,8 @@ const useStyles = makeStyles(() => ({
         '& .MuiFormLabel-root': { color: '#9ca3af' },
         '& .MuiOutlinedInput-root': {
             '& fieldset': { borderColor: '#1f1f2b', borderRadius: '6px' },
-            '&:hover fieldset': { borderColor: '#818cf8' },
-            '&.Mui-focused fieldset': { borderColor: '#818cf8' },
+            '&:hover fieldset': { borderColor: '#60a5fa' },
+            '&.Mui-focused fieldset': { borderColor: '#60a5fa' },
         },
         '& .MuiSvgIcon-root': { color: '#9ca3af', mr: 1, my: 0.5 },
     }

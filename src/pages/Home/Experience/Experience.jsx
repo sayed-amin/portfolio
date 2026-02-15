@@ -11,10 +11,11 @@ import { experiences } from "../../../utils/config";
 import { useMediaQuery } from '@mui/material';
 
 const headingVariants = {
-    hidden: { opacity: 0, y: 40 },
+    hidden: { opacity: 0, y: 40, filter: 'blur(8px)' },
     visible: {
         opacity: 1,
         y: 0,
+        filter: 'blur(0px)',
         transition: { duration: 0.6, ease: 'easeOut' },
     },
 };
@@ -30,10 +31,10 @@ const Experience = () => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.6 }}
             >
-                <SectionHeading subText="Where I've Worked" headText="Work Experience" />
+                <SectionHeading number="02" subText="Where I've Worked" headText="Work Experience" />
             </motion.div>
             <div className={styles.timelineWrapper}>
-                <VerticalTimeline animate={!isMobile} lineColor="rgba(129, 140, 248, 0.15)">
+                <VerticalTimeline animate={!isMobile} lineColor="rgba(96, 165, 250, 0.15)">
                     {experiences.map((experience, index) => (
                         <ExperienceCard key={`experience-${index}`} experience={experience} />
                     ))}
@@ -52,12 +53,12 @@ const ExperienceCard = ({ experience }) => {
                 background: "#16161d",
                 color: "#eaeaf0",
                 boxShadow: isHovered
-                    ? `0 3px 0 ${experience.bottomColor || '#1f1f2b'}, 0 0 20px rgba(129, 140, 248, 0.15)`
+                    ? `0 3px 0 ${experience.bottomColor || '#1f1f2b'}, 0 0 20px rgba(96, 165, 250, 0.15)`
                     : `0 3px 0 ${experience.bottomColor || '#1f1f2b'}`,
                 borderRadius: "8px",
                 border: isHovered
-                    ? "1px solid rgba(129, 140, 248, 0.25)"
-                    : "1px solid rgba(129, 140, 248, 0.06)",
+                    ? "1px solid rgba(96, 165, 250, 0.25)"
+                    : "1px solid rgba(96, 165, 250, 0.06)",
                 transition: "border 0.3s ease, box-shadow 0.3s ease",
             }}
             contentArrowStyle={{ borderRight: "7px solid #16161d" }}

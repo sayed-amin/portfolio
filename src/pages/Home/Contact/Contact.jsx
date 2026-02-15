@@ -8,20 +8,21 @@ const Contact = ({ children }) => {
     return (
         <section id="contact" className={styles.contact}>
             <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 40, filter: 'blur(8px)' }}
+                whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: 'easeOut' }}
             >
                 <SectionHeading
+                    number="04"
                     subText="Get In Touch"
                     headText="Contact"
                 />
             </motion.div>
             <motion.p
                 className={styles.contactSubtext}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 40, filter: 'blur(8px)' }}
+                whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
             >
@@ -29,8 +30,8 @@ const Contact = ({ children }) => {
             </motion.p>
             <motion.div
                 className={styles.container}
-                initial={{ opacity: 0, y: 40, scale: 0.95 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                initial={{ opacity: 0, y: 40, scale: 0.95, filter: 'blur(8px)' }}
+                whileInView={{ opacity: 1, y: 0, scale: 1, filter: 'blur(0px)' }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
             >

@@ -5,10 +5,11 @@ import styles from './Skills.module.css';
 import LazyLoad from 'react-lazyload';
 
 const categoryVariants = {
-    hidden: { opacity: 0, y: 40 },
+    hidden: { opacity: 0, y: 40, filter: 'blur(6px)' },
     visible: (idx) => ({
         opacity: 1,
         y: 0,
+        filter: 'blur(0px)',
         transition: {
             duration: 0.5,
             delay: idx * 0.15,
@@ -20,10 +21,11 @@ const categoryVariants = {
 };
 
 const bubbleVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
+    hidden: { opacity: 0, scale: 0.8, filter: 'blur(4px)' },
     visible: {
         opacity: 1,
         scale: 1,
+        filter: 'blur(0px)',
         transition: { duration: 0.35, ease: 'easeOut' },
     },
 };

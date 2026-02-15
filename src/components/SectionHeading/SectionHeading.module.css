@@ -2,11 +2,20 @@
     margin-bottom: 1.5rem;
 }
 
+.sectionNumber {
+    color: #60a5fa;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 6px;
+    letter-spacing: 0.05em;
+}
+
 .subText {
     opacity: 1;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #818cf8;
+    color: #60a5fa;
     font-size: 14px;
     font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
     margin-bottom: 0.4rem;

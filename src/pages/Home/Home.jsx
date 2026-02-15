@@ -10,6 +10,8 @@ import Contact from './Contact/Contact';
 import { Context } from '../../context/state';
 import ScrollIndicator from '../../components/ScrollIndicator/ScrollIndicator';
 import ParticleBackground from '../../components/ParticleBackground/ParticleBackground';
+import SpotlightCursor from '../../components/SpotlightCursor/SpotlightCursor';
+import DisplacementSphere from '../../components/DisplacementSphere/DisplacementSphere';
 
 const Home = () => {
     const { refreshActiveNavLink } = useContext(Context);
@@ -21,6 +23,8 @@ const Home = () => {
     return (
         <Fragment>
             <ParticleBackground />
+            <DisplacementSphere />
+            <SpotlightCursor />
             <SocialSideBar />
             <main id="portfolio-main" className={styles.mainComponent}>
                 <Intro />

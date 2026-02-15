@@ -29,7 +29,7 @@ const springConfig = {
     mass: 2,
 };
 
-const backgroundColor = { r: 18, g: 18, b: 18 };
+const backgroundColor = { r: 11, g: 11, b: 16 };
 const parallaxFactor = 0.45;
 
 const DisplacementSphere = props => {

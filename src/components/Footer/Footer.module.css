@@ -19,12 +19,12 @@
 
 .nameLink {
     text-decoration: none;
-    color: #818cf8;
+    color: #60a5fa;
     transition: color 150ms ease-in-out;
 }
 
 .nameLink:hover {
-    color: #a5b4fc;
+    color: #93c5fd;
 }
 
 @media (max-width: 640px) {

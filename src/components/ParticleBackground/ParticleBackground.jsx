@@ -9,7 +9,7 @@ const ParticleBackground = () => {
 
     const getParticleCount = useCallback(() => {
         if (typeof window === 'undefined') return 40;
-        return window.innerWidth < 768 ? 30 : 60;
+        return window.innerWidth < 768 ? 35 : 80;
     }, []);
 
     const createParticle = useCallback((width, height) => {
@@ -18,7 +18,7 @@ const ParticleBackground = () => {
             y: Math.random() * height,
             vx: (Math.random() - 0.5) * 0.3,
             vy: (Math.random() - 0.5) * 0.3,
-            radius: Math.random() * 1.5 + 0.5,
+            radius: Math.random() * 2 + 0.5,
             baseX: 0,
             baseY: 0,
         };
@@ -96,8 +96,8 @@ const ParticleBackground = () => {
             }
         };
 
-        const CONNECTION_DISTANCE = 120;
-        const MOUSE_RADIUS = 150;
+        const CONNECTION_DISTANCE = 150;
+        const MOUSE_RADIUS = 200;
         const MOUSE_FORCE = 0.8;
 
         const animate = () => {
@@ -123,6 +123,15 @@ const ParticleBackground = () => {
                     p.y += Math.sin(angle) * force * MOUSE_FORCE;
                 }
 
+                // Gentle attraction from further away
+                const attractDist = 300;
+                if (dist > MOUSE_RADIUS && dist < attractDist && dist > 0) {
+                    const force = 0.02 * (1 - dist / attractDist);
+                    const angle = Math.atan2(dy, dx);
+                    p.x -= Math.cos(angle) * force;
+                    p.y -= Math.sin(angle) * force;
+                }
+
                 // Gentle floating movement
                 p.x += p.vx;
                 p.y += p.vy;
@@ -136,7 +145,11 @@ const ParticleBackground = () => {
                 // Draw particle
                 ctx.beginPath();
                 ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-                ctx.fillStyle = 'rgba(129, 140, 248, 0.15)';
+                // Alternate between indigo and purple particles
+                const alpha = 0.2 + Math.random() * 0.1;
+                ctx.fillStyle = i % 3 === 0
+                    ? `rgba(56, 189, 248, ${alpha})`  // purple
+                    : `rgba(96, 165, 250, ${alpha})`; // indigo
                 ctx.fill();
             }
 
@@ -148,11 +161,11 @@ const ParticleBackground = () => {
                     const dist = Math.sqrt(dx * dx + dy * dy);
 
                     if (dist < CONNECTION_DISTANCE) {
-                        const opacity = 0.05 * (1 - dist / CONNECTION_DISTANCE);
+                        const opacity = 0.08 * (1 - dist / CONNECTION_DISTANCE);
                         ctx.beginPath();
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);
-                        ctx.strokeStyle = `rgba(129, 140, 248, ${opacity})`;
+                        ctx.strokeStyle = `rgba(96, 165, 250, ${opacity})`;
                         ctx.lineWidth = 0.5;
                         ctx.stroke();
                     }
@@ -167,11 +180,11 @@ const ParticleBackground = () => {
                     const dist = Math.sqrt(dx * dx + dy * dy);
 
                     if (dist < MOUSE_RADIUS) {
-                        const opacity = 0.08 * (1 - dist / MOUSE_RADIUS);
+                        const opacity = 0.15 * (1 - dist / MOUSE_RADIUS);
                         ctx.beginPath();
                         ctx.moveTo(mouse.x, mouse.y);
                         ctx.lineTo(particles[i].x, particles[i].y);
-                        ctx.strokeStyle = `rgba(129, 140, 248, ${opacity})`;
+                        ctx.strokeStyle = `rgba(96, 165, 250, ${opacity})`;
                         ctx.lineWidth = 0.5;
                         ctx.stroke();
                     }
